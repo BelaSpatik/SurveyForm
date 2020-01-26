@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>TripConsultant's Survey Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+
+  <link href="surveyform.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Holiday's Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+  <main>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name
+       <input class="user-info" id="name" name="name" type="text" placeholder="Enter your name" required>
+   </div>
+  <div class="form-group">
+     <label for="email" id="email-label">Email
+       <input class="user-info" id="email" name="email" type="email" placeholder="Enter your email" required>
+   </div>
+        <div class="form-group">
+     <label for="age" id="number-label">Age (optional)
+       <input class="user-info" id="number" name="age" type="number" min="12" max="120" placeholder="Age">
+   </div>
+   <div class="form-group">
+     <label for="holiday">Which option best describes your ideal holiday plan?
+       <select id="dropdown" name="holiday" required>
+         <option selected>Select your favourite</option>
+         <option>Beach Weekend Getaway</option>
+         <option>4-Stars-Hot-Tub Hotel break</option>
+         <option>3-day Safari experience</option>
+         <option>Historical walking tour to local attractions</option>
+         <option>Other</option>
+         </select>
+   </div>
+          <div class="form-group radio">
+            <p id="recommend">Would you recommend TripConsultant to a friend?</p> 
+       <label class="radio" for="definitely">
+        <input id="definitely" value="definitely" name="recommend" type="radio" checked>
+         Definitely</label>
+        <label class="radio" for="maybe">
+       <input id="maybe" value="maybe" name="recommend" type="radio" checked>
+             Maybe</label>
+        <label class="radio bottom" for="not-sure">
+       <input id="not-sure" value="not-sure" name="recommend" type="radio" checked>
+             Not sure</label>
+      </div>
+      <div class="form-group">
+        <label for="plans">How far in advance do you plan your holiday trips?
+       <select id="plan" name="plan" required>
+         <option selected>Select an option</option>
+         <option>A couple of days before</option>
+         <option>Two weeks before</option>
+         <option>One month before</option>
+         <option>Six months before</option>
+         <option>Other</option>
+         </select>
+   </div>
+   <div class="form-group checkbox">
+     <p id="destinations">What destinations would you like to visit?<span>(Check all that apply)</span></p>
+       <label class="checkbox" for="canada">
+         <input id="canada" name="destination" type="checkbox" value="canada"> Toronto, Canada</label>
+        <label class="checkbox" for="argentina"><input id="argentina" name="destination" type="checkbox" value="argentina">
+         Buenos Aires, Argentina</label>
+        <label class="checkbox" for="mexico"><input id="mexico" name="destination" type="checkbox" value="mexico">
+         Cancún, Mexico</label>
+        <label class="checkbox" for="switzerland"><input id="switzerland" name="destination" type="checkbox" value="switzerland">
+         Lucerne, Switzerland</label>
+        <label class="checkbox" for="new-zealand"><input id="new-zealand" name="destination" type="checkbox" value="New Zealand">
+         Milford Sound, New Zealand</label>
+        <label class="checkbox" for="belgium"><input id="belgium" name="destination" type="checkbox" value="belgium">
+         Bruges, Belgium</label>
+        <label class="checkbox bottom" for="south-africa"><input id="south-africa" name="destination" type="checkbox" value="south-africa">
+         Cape Town, South Africa</label>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" placeholder="Enter you comment here..."></textarea>
+        <button type="submit" id="submit" name="submit" value="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
